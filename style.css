@@ -1,6 +1,9 @@
 html {
   font-size: 62.5%;
 }
+* {
+  box-sizing: border-box;
+}
 body {
   box-sizing: border-box;
   background-color: rgb(24, 25, 26);
@@ -331,8 +334,8 @@ input::placeholder {
   width: 50%;
   height: 89.5vh;
   background-color: rgb(24, 25, 26);
-  background-color: aqua;
-  /* background-color: rgb(24, 25, 26); */
+  /* background-color: aqua; */
+  background-color: rgb(24, 25, 26);
   overflow: auto;
 }
 .main-3 {
@@ -404,7 +407,12 @@ input::placeholder {
 ::-webkit-scrollbar {
   text-decoration: none;
 }
-
+::-webkit-scrollbar-thumb {
+  color: red;
+}
+::-webkit-scrollbar-track {
+  color: red;
+}
 .icon.img {
   display: flex;
   justify-content: center;
